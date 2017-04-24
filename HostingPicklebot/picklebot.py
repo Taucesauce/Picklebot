@@ -89,6 +89,7 @@ class Picklebot():
                 trackDict[track['track']['name']] = track['track']['artists'][0]['name']
 
         #Sorts the data by most popular song and grabs the top 3 songs in the playlist for the week.
+        
         top3 = sorted(zip(trackPop,trackNames), reverse=True)[:3]
         top3Artists = []
 
